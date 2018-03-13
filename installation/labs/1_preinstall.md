@@ -167,3 +167,24 @@
 
 ```
 
+## Modifcations
+
+```
+
+    [ec2-user@cdh-server-0 ~]$ sudo systemctl enable ntpd.service
+    Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to /usr/lib/systemd/system/ntpd.service.
+    [ec2-user@cdh-server-0 ~]$ sudo systemctl enable ncsd.service
+    Failed to execute operation: No such file or directory
+    [ec2-user@cdh-server-0 ~]$ sudo systemctl enable nscd.service
+    Created symlink from /etc/systemd/system/multi-user.target.wants/nscd.service to /usr/lib/systemd/system/nscd.service.
+    Created symlink from /etc/systemd/system/sockets.target.wants/nscd.socket to /usr/lib/systemd/system/nscd.socket.
+    [ec2-user@cdh-server-0 ~]$ sudo systemctl status ntpd.service
+    ● ntpd.service - Network Time Service
+    Loaded: loaded (/usr/lib/systemd/system/ntpd.service; enabled; vendor preset: disabled)
+    Active: inactive (dead)
+    [ec2-user@cdh-server-0 ~]$ sudo systemctl status nscd.service
+    ● nscd.service - Name Service Cache Daemon
+    Loaded: loaded (/usr/lib/systemd/system/nscd.service; enabled; vendor preset: disabled)
+    Active: inactive (dead)
+
+```
