@@ -1,3 +1,5 @@
+Added Directory and Directory ownership
+
 #!/bin/sh
 # Confirm the path values given below correspond to your installation
 
@@ -11,12 +13,12 @@ echo Testing loop started on `date`
 for i in 8    
 do
    # Reducer containers
-   for j in 4 
+   **for j in 4** 
    do                 
       # Container memory
       for k in 512 1024 
       do                       
-         echo ${i}_${j}_${k}  
+         **echo ${i}_${j}_${k}**
          # Set mapper JVM heap 
          MAP_MB=`echo "($k*0.8)/1" | bc` 
 
