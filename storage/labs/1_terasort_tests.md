@@ -21,7 +21,7 @@ Generate new Teragen dataset
 
 ```
 
-    [JeKuOrdina@cdh-agent-0 ec2-user]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen -D dfs.block.size=320000000 100000000 /user/JeKuOrdina/teragen
+    [JeKuOrdina@cdh-agent-0 ec2-user]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen -D dfs.block.size=320000000 **-Dmapreduce.job.maps=4** 100000000 /user/JeKuOrdina/teragen
 
 
     18/03/13 11:10:15 INFO mapreduce.Job: Job job_1520932758114_0005 completed successfully
