@@ -112,3 +112,75 @@ Error due to wrong ownership of folder anupam, access=WRITE, inode="/user/anupam
 
 ```
 
+Correct output
+
+```
+time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar pi 50 100
+Number of Maps  = 50
+Samples per Map = 100
+Wrote input for Map #0
+Wrote input for Map #1
+Wrote input for Map #2
+Wrote input for Map #3
+Wrote input for Map #4
+Wrote input for Map #5
+Wrote input for Map #6
+Wrote input for Map #7
+Wrote input for Map #8
+Wrote input for Map #9
+Wrote input for Map #10
+Wrote input for Map #11
+Wrote input for Map #12
+Wrote input for Map #13
+Wrote input for Map #14
+Wrote input for Map #15
+Wrote input for Map #16
+Wrote input for Map #17
+Wrote input for Map #18
+Wrote input for Map #19
+Wrote input for Map #20
+Wrote input for Map #21
+Wrote input for Map #22
+Wrote input for Map #23
+Wrote input for Map #24
+Wrote input for Map #25
+Wrote input for Map #26
+Wrote input for Map #27
+Wrote input for Map #28
+Wrote input for Map #29
+Wrote input for Map #30
+Wrote input for Map #31
+Wrote input for Map #32
+Wrote input for Map #33
+Wrote input for Map #34
+Wrote input for Map #35
+Wrote input for Map #36
+Wrote input for Map #37
+Wrote input for Map #38
+Wrote input for Map #39
+Wrote input for Map #40
+Wrote input for Map #41
+Wrote input for Map #42
+Wrote input for Map #43
+Wrote input for Map #44
+Wrote input for Map #45
+Wrote input for Map #46
+Wrote input for Map #47
+Wrote input for Map #48
+Wrote input for Map #49
+Starting Job
+18/03/16 11:07:34 INFO client.RMProxy: Connecting to ResourceManager at cdh-mgt-0.localdomain/172.31.29.241:8032
+18/03/16 11:07:34 INFO hdfs.DFSClient: Created token for anupam: HDFS_DELEGATION_TOKEN owner=anupam@JEKUORDINA.NL, renewer=yarn, realUser=, issueDate=1521198454119, maxDate=1521803254119, sequenceNumber=2, masterKeyId=6 on 172.31.29.241:8020
+18/03/16 11:07:34 INFO security.TokenCache: Got dt for hdfs://cdh-mgt-0.localdomain:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 172.31.29.241:8020, Ident: (token for anupam: HDFS_DELEGATION_TOKEN owner=anupam@JEKUORDINA.NL, renewer=yarn, realUser=, issueDate=1521198454119, maxDate=1521803254119, sequenceNumber=2, masterKeyId=6)
+18/03/16 11:07:34 INFO input.FileInputFormat: Total input paths to process : 50
+18/03/16 11:07:34 INFO mapreduce.JobSubmitter: number of splits:50
+18/03/16 11:07:34 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1521198296329_0001
+18/03/16 11:07:34 INFO mapreduce.JobSubmitter: Kind: HDFS_DELEGATION_TOKEN, Service: 172.31.29.241:8020, Ident: (token for anupam: HDFS_DELEGATION_TOKEN owner=anupam@JEKUORDINA.NL, renewer=yarn, realUser=, issueDate=1521198454119, maxDate=1521803254119, sequenceNumber=2, masterKeyId=6)
+18/03/16 11:07:35 INFO impl.YarnClientImpl: Submitted application application_1521198296329_0001
+18/03/16 11:07:35 INFO mapreduce.Job: The url to track the job: http://cdh-mgt-0.localdomain:8088/proxy/application_1521198296329_0001/
+18/03/16 11:07:35 INFO mapreduce.Job: Running job: job_1521198296329_0001
+18/03/16 11:07:43 INFO mapreduce.Job: Job job_1521198296329_0001 running in uber mode : false
+18/03/16 11:07:43 INFO mapreduce.Job:  map 0% reduce 0%
+
+
+```

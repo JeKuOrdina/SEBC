@@ -1,4 +1,6 @@
 
+Permission errors, had to execute following commands.
+
 ```
 
     cd /var/lib/
