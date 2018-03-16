@@ -48,8 +48,11 @@ In Mysql create the following databases
 ### DB setup
 
 `hostname` : cdh-mgt-0.localdomain
+
 `mysql --version` mysql  Ver 15.1 Distrib 5.5.56-MariaDB, for Linux (x86_64) using readline 5.1
+
 `mysql -uroot -proot
+
 `
 ```
     MariaDB [(none)]> show databases;
