@@ -135,3 +135,7 @@ hadoop fsck -blocks /user/hilary
 
     The filesystem under path '/user/hilary' is HEALTHY
 ```
+
+
+
+
